@@ -1,4 +1,32 @@
+# Ignorar dependências do Node
 node_modules/
+
+# Ignorar caches e dados sensíveis do whatsapp-web.js
+.wwebjs_cache/
+.wwebjs_auth/
+
+# Ignorar arquivos de ambiente e segredos
 .env
-.DS_Store
+# secrets.json # Descomente se tiver um arquivo de segredos separado
+
+# Ignorar arquivos de build e temporários
+/build
+/dist
+/out
+/tmp
+*.tmp
+
+# Ignorar logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar arquivos de sistema e de editor
+.DS_Store
+.vscode/ # Opcional: descomente se não quiser versionar configurações do VS Code
+.idea/   # Opcional: descomente se usar IntelliJ/WebStorm
+*.swp    # Arquivos swap do Vim
+
+# Ignorar pastas de backup ou espelho (se aplicável)
+botzapmirror/
